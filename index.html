@@ -425,7 +425,6 @@
       <a class="btn" href="#" id="link-buy" target="_blank" rel="noopener">Buy now</a>
       <a class="btn ghost" href="#" id="link-chart" target="_blank" rel="noopener">Chart</a>
       <a class="btn ghost" href="#" id="link-x" target="_blank" rel="noopener">X / Twitter</a>
-      <a class="btn ghost" href="#" id="link-tg" target="_blank" rel="noopener">Telegram</a>
     </div>
   </div>
 </section>
@@ -445,12 +444,11 @@
     ca: "",          // contract address
     buy: "",         // e.g. https://pump.fun/coin/<CA> or https://jup.ag/swap/SOL-<CA>
     chart: "",       // e.g. https://dexscreener.com/solana/<CA>
-    x: "",           // X / Twitter profile
-    telegram: ""     // Telegram group
+    x: "https://x.com/juliephilmadame"   // X / Twitter profile
   };
 
   if (CONFIG.ca) document.getElementById('ca').textContent = CONFIG.ca;
-  [['link-buy','buy'],['link-chart','chart'],['link-x','x'],['link-tg','telegram']].forEach(([id,key])=>{
+  [['link-buy','buy'],['link-chart','chart'],['link-x','x']].forEach(([id,key])=>{
     const el = document.getElementById(id);
     if (CONFIG[key]) el.href = CONFIG[key];
     else { el.removeAttribute('target'); el.addEventListener('click', e => { e.preventDefault(); toast('Coming soon'); }); }
