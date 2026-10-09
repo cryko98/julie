@@ -111,7 +111,7 @@
   .cover{
     position:relative;z-index:2;
     display:grid;grid-template-columns:1fr minmax(280px, 520px) 1fr;gap:24px;align-items:end;
-    margin-top:-4vw;
+    margin-top:12px;
   }
   .cover-photo{position:relative}
   .cover-photo img{
@@ -151,6 +151,8 @@
   }
   .ca code{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
   .ca button{flex-shrink:0;padding:8px 14px;font-size:12px}
+  .pair{font-family:var(--mono);font-size:13px;color:var(--tweed-2);text-align:center}
+  .pair b{color:var(--rose);font-weight:500}
 
   /* ---------- MARQUEE ---------- */
   .marquee{
@@ -220,7 +222,7 @@
   .stat{padding:36px 24px;border-right:1px solid rgba(74,51,38,.25)}
   .stat:last-child{border-right:none}
   @media (max-width:860px){.stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1px solid rgba(74,51,38,.25)}}
-  .stat .n{font-family:var(--serif);font-weight:900;font-size:clamp(34px,4.4vw,58px);letter-spacing:-.03em;line-height:1}
+  .stat .n{font-family:var(--serif);font-weight:900;font-size:clamp(26px,3.6vw,48px);letter-spacing:-.03em;line-height:1;overflow-wrap:anywhere}
   .stat .l{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:10px;color:var(--tweed-2)}
 
   /* How to buy */
@@ -300,9 +302,11 @@
         <h3>Married to an <i>AI influencer.</i> Unimpressed by it.</h3>
         <span class="kicker">Market report</span>
         <h3>His coin: <i>$10M+.</i><br>Hers: just getting started.</h3>
+        <span class="kicker">Launch</span>
+        <h3>Live on <i>pump.fun</i> — paired to <i>$JeanPhil.</i></h3>
       </div>
       <div class="cover-photo">
-        <img src="assets/julie.jpg" alt="Julie Phil — blonde bob, tweed jacket, sky-blue backdrop" width="1200" height="1200">
+        <img src="assets/julie-cutout.webp" alt="Julie Phil — blonde bob, tweed jacket" width="1200" height="1200">
         <div class="price-tag">Mrs.<br>Phil<small>ON SOLANA</small></div>
       </div>
       <div class="coverline right">
@@ -322,14 +326,15 @@
       <code id="ca">Coming soon…</code>
       <button class="btn" id="copy" type="button">Copy</button>
     </div>
+    <span class="pair">Launched via <b>pump.fun</b> · <b>$JuliePhil</b> paired to <b>$JeanPhil</b></span>
     <a class="btn ghost" href="#lore">Read the lore</a>
   </div>
 </div>
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Mrs. Jean Phil</span><span>$JuliePhil</span><span>The wife always wins</span><span>Jean did $10M. Julie does more.</span><span>Tweed season on Solana</span>
-    <span>Mrs. Jean Phil</span><span>$JuliePhil</span><span>The wife always wins</span><span>Jean did $10M. Julie does more.</span><span>Tweed season on Solana</span>
+    <span>Mrs. Jean Phil</span><span>$JuliePhil</span><span>The wife always wins</span><span>Jean did $10M. Julie does more.</span><span>Tweed season on Solana</span><span>$JuliePhil × $JeanPhil on pump.fun</span>
+    <span>Mrs. Jean Phil</span><span>$JuliePhil</span><span>The wife always wins</span><span>Jean did $10M. Julie does more.</span><span>Tweed season on Solana</span><span>$JuliePhil × $JeanPhil on pump.fun</span>
   </div>
 </div>
 
@@ -348,6 +353,7 @@
         <p>But nobody ever asks who is standing just outside the frame. Who chose the tweed. Who fixed the collar before the shoot. Who rolls her eyes every time he says "we're so early."</p>
         <blockquote>“He's the influencer. I'm the influence.”</blockquote>
         <p>Meet <strong>Julie Phil</strong> — Jean's wife. Sharp bob, sharper instincts. She watched the chart from the sidelines long enough. Now she has a ticker of her own: <strong>$JuliePhil</strong>.</p>
+        <p>Launched via <strong>pump.fun</strong> and paired directly to <strong>$JeanPhil</strong> — because a marriage is a partnership, and so is a trading pair. Every $JuliePhil trade goes through her husband&#39;s coin.</p>
       </div>
     </div>
   </div>
@@ -387,12 +393,12 @@
   <div class="wrap">
     <span class="eyebrow">Chapter three — The numbers</span>
     <h2>Simple. <em>Elegant.</em> Like her.</h2>
-    <p class="lede">No taxes, no games. A clean launch on Solana — the kind of decision Julie would make.</p>
+    <p class="lede">No taxes, no games. A fair launch on pump.fun, paired to $JeanPhil — the kind of decision Julie would make.</p>
     <div class="stats">
       <div class="stat reveal"><div class="n">1B</div><div class="l">Total supply</div></div>
+      <div class="stat reveal"><div class="n">pump.fun</div><div class="l">Launchpad</div></div>
+      <div class="stat reveal"><div class="n">$JeanPhil</div><div class="l">Paired to</div></div>
       <div class="stat reveal"><div class="n">0%</div><div class="l">Buy / sell tax</div></div>
-      <div class="stat reveal"><div class="n">Burnt</div><div class="l">Liquidity</div></div>
-      <div class="stat reveal"><div class="n">SOL</div><div class="l">Chain</div></div>
     </div>
   </div>
 </section>
@@ -402,9 +408,9 @@
     <span class="eyebrow">Chapter four — Join the family</span>
     <h2>How to buy <em>$JuliePhil</em></h2>
     <div class="steps">
-      <div class="step reveal"><h4>Get a wallet</h4><p>Download Phantom or Solflare and set up your Solana wallet.</p></div>
-      <div class="step reveal"><h4>Load up SOL</h4><p>Buy SOL on an exchange and send it to your wallet.</p></div>
-      <div class="step reveal"><h4>Swap</h4><p>Paste the contract address on Jupiter or Raydium and swap SOL for $JuliePhil.</p></div>
+      <div class="step reveal"><h4>Get a wallet</h4><p>Download Phantom or Solflare and set up your Solana wallet. Fund it with SOL.</p></div>
+      <div class="step reveal"><h4>Get $JeanPhil</h4><p>$JuliePhil is paired to $JeanPhil — grab some of the husband&#39;s coin first.</p></div>
+      <div class="step reveal"><h4>Swap on pump.fun</h4><p>Open $JuliePhil on pump.fun with the contract address and swap your $JeanPhil for $JuliePhil.</p></div>
       <div class="step reveal"><h4>Hold like a wife</h4><p>Through thick and thin, bull and bear. Till moon do us part.</p></div>
     </div>
   </div>
