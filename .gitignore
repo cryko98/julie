@@ -1,1 +1,3 @@
 .claude/
+# original full-size uploads; the site uses optimized copies in assets/img and assets/video
+assets/hf_*
